@@ -3,15 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=18.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "node server.js",
+    "start": "node server.js",
     "postinstall": "npm run build",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "axios": "^1.7.9",
+    "express": "^4.21.2",
     "lucide-react": "^0.475.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
