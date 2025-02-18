@@ -1,0 +1,285 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #5865f3;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header .author {
+  color: #d0d2ee;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.main-content {
+  width: 100%;
+  padding: 40px 5%;
+  box-sizing: border-box;
+}
+
+h1 {}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: none;
+}
+
+.upload-column {
+  width: 100%;
+}
+
+.dropzone {
+  border: 2px dashed #60A5FA;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-color: #F9FAFB;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropzone:hover {
+  background-color: #E5E7EB;
+}
+
+.dropzone p {
+  font-size: 1.1rem;
+  color: #5865f3;
+  font-weight: 500;
+}
+
+.image-preview {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.aligned-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.size-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.size-input {
+  padding: 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  width: 100px;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #5865f3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+button:hover:not(:disabled) {
+  background-color: #60A5FA;
+}
+
+button:disabled {
+  background-color: #E5E7EB;
+  cursor: not-allowed;
+}
+
+.btn-test {
+  margin-bottom: 20px;
+}
+
+.btn-analyze {
+  margin-left: 10px;
+}
+
+.error {
+  color: #EF4444;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.result-column {
+  width: 100%;
+}
+
+.result-box {
+  background-color: #e7edf1;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.result-box h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #5865f3;
+  margin-bottom: 20px;
+}
+
+.result-box ul {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.result-box img {
+  margin-top: 20px;
+}
+
+.legend {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.legend h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5865f3;
+  margin-bottom: 10px;
+}
+
+.legend-items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+}
+.how-to-use {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.how-to-use-column {
+  width: 48%;
+  margin-left: 20px;
+  background-color: #F9FAFB;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.how-to-use-column h3 {
+  color: #5865f3;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.how-to-use-column p {
+  margin: 10px 0;
+}
+
+.how-to-use-column button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #5865f3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.how-to-use-column button:hover {
+  background-color: #60A5FA;
+}
+
+@media (max-width: 768px) {
+  .how-to-use {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .how-to-use-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 5%;
+  }
+  .aligned-image {
+    max-width: 100%;
+    max-height: 300px;
+    width: 100%;
+  }
+}
