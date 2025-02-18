@@ -94,7 +94,7 @@ function App() {
                 <div className="how-to-use">
                     <div className="how-to-use-column">
                         <h3>Option 1: Upload Your Own Image</h3>
-                        <p>1. <strong>Select an image</strong>: Drag and drop an image or click the box below to select
+                        <p>1. <strong>Select a jpg image</strong>: Drag and drop an image or click the box below to select
                             one.</p>
                         <p>2. <strong>Optionally choose checkbox size</strong>: You can choose the size of the checkbox
                             to detect, default is 24px.</p>
